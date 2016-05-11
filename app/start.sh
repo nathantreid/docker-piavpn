@@ -83,9 +83,6 @@ if [ ! -f /app/runonce ]; then
 
 fi
 
-chown -R $DELUGE_UID:$DELUGE_GID /app/deluge
-chown -R $DELUGE_UID:$DELUGE_GID /torrents
-
 # spin it up
 exec /usr/sbin/runsvdir-start
                           
